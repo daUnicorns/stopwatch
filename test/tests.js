@@ -19,16 +19,9 @@ test("elapsedTime() calculates the difference between stop and startTime", funct
     equal( T.timeDiff(startTime,stopTime), timePassed, true);
 });
 
-test("humanTime() outputs a human readable time format from a timestamp"), function(){
-/*
-01/27/2016 @ 1:41pm (UTC)
-2016-01-27T13:41:46+00:00 in ISO 8601
-Wed, 27 Jan 2016 13:41:46 +0000 in RFC 822, 1036, 1123, 2822
-Wednesday, 27-Jan-16 13:41:46 UTC in RFC 2822
-2016-01-27T13:41:46+00:00 in RFC 3339 */
-    var timeStamp = 1453902106;
-    var humanTimeStr = "13:41:46";
-    equal(T.humanTime(timeStamp), humanTimeStr, true);
-
-
+test("humanTime() takes millseconds and returns a human readable format of that e.g. 00:00:00:00", function() {
+    var mSecs = 10010; /*00:00:10:01*/
+    var mSecs2 = 100760; /*00:01:40:76*/
+    var mSecs3 = 12600000; /*03:30:00:00 */
+    equal(T.humanTime(12600000), '03:30:00:00',true);
 });
