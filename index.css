@@ -2,38 +2,12 @@ body {
   text-align: center;
   margin: 0;
 }
-
-/*html {
-  -webkit-filter: invert(1) hue-rotate(180deg);
-  filter: invert(1) hue-rotate(180deg);
-}*/
-
 .landscape {
   background-image: url("http://4vector.com/i/free-vector-cute-cartoon-landscape-vector_094135_nvw%2033%20(3).jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   padding-top: 30px;
 }
-
-.landscape-night{
-  background-image: url("");
-
-}
-
-@keyframes fadeoutSun{
-  0% { opacity: 1}
-  100% { opacity: 0}
-}
-
-@keyframes killSun{
-  display:none;
-}
-
-.animate-fadeout{
-  -webkit-animation: fadeoutSun 5s forwards;
-
-}
-
 #tugme {
   height: 100px;
 }
@@ -112,18 +86,10 @@ button {
   font-family: 'Roboto Mono', ;
 
 }
+
 #angrycloud {
   position: absolute;
   margin-top: -247px;
   height: 133px;
   margin-left:-60px;
-}
-
-#sun{
-  position:absolute;
-  right:25px;
-  top:25px;
-  height:200px;
-  width: 200px;
-  z-index: 99999;
 }
