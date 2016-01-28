@@ -1,0 +1,44 @@
+body {
+  font-family: 'Roboto Mono', ;
+  text-align: center;
+  margin: 0;
+}
+.landscape {
+  background-image: url("http://4vector.com/i/free-vector-cute-cartoon-landscape-vector_094135_nvw%2033%20(3).jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding-top: 30px;
+}
+.stopwatch_container {
+  background-image: url("http://img08.deviantart.net/a093/i/2012/029/b/0/lady_unicorn_by_badflippy-d4nz801.png");
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 505px;
+  /*padding-left: 350px;*/
+  padding-top: 240px;
+  /*background-color: #fcffad;*/
+  margin: 0 auto 0 auto;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 30px;
+}
+h2 {
+  font-size: 50px;
+}
+span {
+  display: inline-block;
+  width: 95px;
+  text-align: center;
+}
+button {
+  font-size: 15px;
+  width: 70px;
+  height: 30px;
+  border-radius:10px;
+  border: 5px;
+  background-color: #99e6ff;
+  font-family: 'Roboto Mono', ;
+
+}
