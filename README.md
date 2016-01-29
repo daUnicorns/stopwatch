@@ -1,5 +1,6 @@
 # stopwatch
-Stopwatch project used as a vehicle to use TDD and Qunit
+Stopwatch project used as a vehicle to use TDD and Qunit. 
+Needs to start stop and reset
 
 ##Tests Created
 1. records start time 
