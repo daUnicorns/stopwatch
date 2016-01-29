@@ -4,8 +4,6 @@ body {
 }
 /* cycles through the hue rotatfilter*/
 html {
-  -webkit-filter: invert(1) hue-rotate(180deg);
-  /*filter: invert(1) hue-rotate(180deg);*/
   -webkit-animation: fadein infinite 10s;
 }
 @-webkit-keyframes fadein {
@@ -21,8 +19,8 @@ html {
   background-size: 100%;
   padding-top: 30px;
 }
-/*sun image*/
-#sun{
+/*sun and moon image*/
+.sun-and-moon{
   position:absolute;
  right:25px;
   top:25px;
@@ -42,15 +40,6 @@ html {
    -webkit-animation: fadeoutSun 10s infinite;
  }
 
- /*moon */
- #moon{
-   position:absolute;
-   right:25px;
-   top:25px;
-   height:200px;
-   width: 200px;
-   z-index: 99999;
- }
  /*moon fadeout*/
 @keyframes fadeoutMoon{
   0% { opacity: 0}
@@ -71,15 +60,17 @@ html {
     40% {-webkit-transform: translateY(-30px);}
     60% {-webkit-transform: translateY(-15px);}
 }
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-    40% {transform: translateY(-30px);}
-    60% {transform: translateY(-15px);}
-}
-
 .bounce {
     -webkit-animation-name: bounce;
     animation-name: bounce;
+}
+/*sets animation duration for bounce above and shake below*/
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
 }
 
 /*shaking angry cloud*/
@@ -94,18 +85,7 @@ html {
     10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-10px);}
     20%, 40%, 60%, 80% {-webkit-transform: translateX(10px);}
 }
-@keyframes shake {
-    0%, 100% {transform: translateX(0);}
-    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
-    20%, 40%, 60%, 80% {transform: translateX(10px);}
-}
-.animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-}
+
 .shake {
     -webkit-animation-name: shake;
     animation-name: shake;
@@ -143,5 +123,4 @@ button {
   border: 5px;
   background-color: #99e6ff;
   font-family: 'Roboto Mono', ;
-
 }
