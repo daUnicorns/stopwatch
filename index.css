@@ -2,7 +2,7 @@ body {
   text-align: center;
   margin:  0;
 }
-/* cycles through the filter*/
+/* cycles through the hue rotatfilter*/
 html {
   -webkit-filter: invert(1) hue-rotate(180deg);
   /*filter: invert(1) hue-rotate(180deg);*/
@@ -11,7 +11,7 @@ html {
 @-webkit-keyframes fadein {
    0% {    -webkit-filter: hue-rotate(0deg)}
    30% {    -webkit-filter: hue-rotate(0deg)}
-  60% { -webkit-filter:  hue-rotate(180deg);}
+  50% { -webkit-filter:  hue-rotate(180deg);}
  100% {  -webkit-filter: hue-rotate(360deg);}
 }
 /*landscape image*/
@@ -21,20 +21,31 @@ html {
   background-size: 100%;
   padding-top: 30px;
 }
-/*sun image and animation*/
+/*sun image*/
+#sun{
+  position:absolute;
+ right:25px;
+  top:25px;
+  height:200px;
+  width: 200px;
+  z-index: 99999;
+}
+/*sun fadeout*/
 @keyframes fadeoutSun{
     0% { opacity: 1}
     30%{ opacity: 1}
-   60% { opacity: 0}
-   90% {opacity: 0}
+   45% { opacity: 0}
+   95% {opacity: 0}
    100% { opacity: 1}
  }
  .animate-fadeout{
    -webkit-animation: fadeoutSun 10s infinite;
  }
- #sun{
+
+ /*moon */
+ #moon{
    position:absolute;
-  right:25px;
+   right:25px;
    top:25px;
    height:200px;
    width: 200px;
@@ -44,22 +55,13 @@ html {
 @keyframes fadeoutMoon{
   0% { opacity: 0}
   30%{ opacity: 0}
-  60% { opacity: 1}
+  50% { opacity: 1}
   90% {opacity: 1}
   100% { opacity: 0}
 }
 .animate-fadenight{
     -webkit-animation: fadeoutMoon 10s infinite;
 }
-#moon{
-  position:absolute;
-  right:25px;
-  top:25px;
-  height:200px;
-  width: 200px;
-  z-index: 99999;
-}
-
 /*bounding tug me creature*/
 #tugme {
   height: 100px;
@@ -119,7 +121,7 @@ html {
   /*background-color: #fcffad;*/
   margin: 0 auto 0 auto;
 }
-
+/*stopwatch*/
 h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 30px;
